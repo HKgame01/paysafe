@@ -17,8 +17,67 @@
     <body>
         <div class="landing">
             <div class="land-btn">
-                <button id="signin">Sign in</button>
-                <button id="signup">Sign up</button>
+                <button onclick="document.getElementById('signin').style.display='block'" style="width:auto;">Sign in</button>
+                <button onclick="document.getElementById('signup').style.display='block'" style="width:auto;">Sign up</button>
+            </div>
+            <div id="signin" class="in-form">
+                <span onclick="document.getElementById('signin').style.display='none'" class="close" title="Close Sign in">&times;</span>
+                <form class="in-content" action="">
+                    
+                      <h1 class="title">Sign In</h1>
+                      <div class="inputcontainer">
+                        <label for="email"><b>Email</b></label>
+                        <input type="text" placeholder="" name="email" required>
+                      </div>
+
+                      <div class="inputcontainer">
+                        <label for="pw"><b>Password</b></label>
+                        <input type="password" placeholder="" name="psw" required>
+                      </div>
+                
+                      <label>
+                        <div class="checkboc-wrapper">
+                            <input type="checkbox" id="remember"> Remember me
+                        </div>    
+                      </label>
+                
+                      <div class="in-clear">
+                        <button type="button" onclick="document.getElementById('signin').style.display='none'" class="cancelbtn">Cancel</button>
+                        <button type="submit" class="signinbtn">Sign In</button>
+                      </div>
+                  </form>
+            </div>
+            <div id="signup" class="up-form">
+                <span onclick="document.getElementById('signup').style.display='none'" class="close" title="Close Sign up">&times;</span>
+                <form class="up-content" action="">
+                    
+                    <h1 class="title">Sign Up</h1>
+                    <div class="inputcontainer">
+                      <label for="email"><b>Email</b></label>
+                      <input type="text" placeholder="" name="email" required>
+                    </div>
+
+                    <div class="inputcontainer">
+                      <label for="pw"><b>Password</b></label>
+                      <input type="password" placeholder="" name="psw" required>
+                    </div>
+
+                    <div class="inputcontainer">
+                      <label for="confirm-pw"><b>Confirm Password</b></label>
+                      <input type="password" placeholder="" name="confirm-pws" required>
+                    </div>
+              
+                    <label>
+                      <div class="checkboc-wrapper">
+                          <input type="checkbox" id="remember"> Remember me
+                      </div>    
+                    </label>
+              
+                    <div class="up-clear">
+                      <button type="button" onclick="document.getElementById('signup').style.display='none'" class="cancelbtn">Cancel</button>
+                      <button type="submit" class="signinbtn">Sign Up</button>
+                    </div>
+                </form>
             </div>
             <h1>PAYSAFE</h1>
             <p>Identify frauds and secure your money transfers!</p>
