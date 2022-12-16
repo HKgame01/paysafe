@@ -20,7 +20,7 @@
                 <button onclick="document.getElementById('signin').style.display='block'" style="width:auto;">Sign in</button>
                 <button onclick="document.getElementById('signup').style.display='block'" style="width:auto;">Sign up</button>
             </div>
-            <div id="signin" class="in-form">
+            <div id="signin" class="in_form">
                 <span onclick="document.getElementById('signin').style.display='none'" class="close" title="Close Sign in">&times;</span>
                 <form class="in-content" action="">
                     
@@ -47,7 +47,7 @@
                       </div>
                   </form>
             </div>
-            <div id="signup" class="up-form">
+            <div id="signup" class="up_form">
                 <span onclick="document.getElementById('signup').style.display='none'" class="close" title="Close Sign up">&times;</span>
                 <form class="up-content" action="">
                     
@@ -79,6 +79,29 @@
                     </div>
                 </form>
             </div>
+
+            <script>
+                // Get the Sign in form
+                var in_form = document.getElementById('signin');
+                
+                // When the user clicks anywhere outside of the form, close it
+                window.onclick = function(event) {
+                  if (event.target == in_form) {
+                    in_form.style.display = "none";
+                  }
+                }
+
+                // Get the Sign up form
+                var up_form = document.getElementById('signup');
+                
+                // When the user clicks anywhere outside of the form, close it
+                window.onclick = function(event) {
+                  if (event.target == up_form) {
+                    up_form.style.display = "none";
+                  }
+                }
+            </script>
+
             <h1>PAYSAFE</h1>
             <p>Identify frauds and secure your money transfers!</p>
             <h6>&copy; 2022 PAYSAFE</h6>
