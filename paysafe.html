@@ -36,6 +36,15 @@
             <div class="transaction">
                 <h1>PAYSAFE</h1>
                 <p>Identify frauds and secure your money transfers!</p>
-            </div>
+                <button onclick="document.getElementById('transac').style.display='block'" style="width:auto;">Start Transaction</button>
+                <div id="transac" class="transac-btn">
+                    <span onclick="document.getElementById('transac').style.display='none'" class="close" title="Cancel Transaction">&times;</span>
+                    <form class="pay" action="">
+                        <div class="transacinput">
+                            <input type="number" placeholder="Enter Receiver's Contact No" name="contactno">
+                            <input type="number" placeholder="Enter the amount you want to send" name="amt">
+                            <input> 
+                        </div>
+                </div>
         </div>
     </body>
