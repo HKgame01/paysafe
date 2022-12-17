@@ -1,0 +1,27 @@
+*{
+    margin:0;
+    padding: 0;
+  }
+
+html,body{
+    height: 100%;
+    width: 100%;
+}
+
+.register-page{
+    position:relative;
+    content:"";
+    background-image: linear-gradient(to bottom left,#90ee91,#bff4be, #d6f6d5);
+    background-attachment: fixed;
+    width: 100%;
+    height: 100%;
+}
+
+.land-btn{
+    float: right;
+    
+}
+
+.in_form, .up_form{
+    display: none;
+}
