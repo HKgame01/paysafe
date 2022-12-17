@@ -1,110 +1,48 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name="description" content="A website to ensure a secure way of transfering money.">
-        <title>PAYSAFE- Sign In</title>
-        <link rel="stylesheet" href="style.css">
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Albert Sans">
-        <style>
-            body{
-                font-family:"Albert Sans",sans-serif;
-            }
-        </style>
-    </head>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Paysafe</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Karla&display=swap" rel="stylesheet">
 
-    <body>
-        <div class="register-page">
-            <div class="land-btn">
-                <button onclick="document.getElementById('signin').style.display='block'" style="width:auto;">Sign in</button>
-                <button onclick="document.getElementById('signup').style.display='block'" style="width:auto;">Sign up</button>
-            </div>
-            <div id="signin" class="in_form">
-                <span onclick="document.getElementById('signin').style.display='none'" class="close" title="Close Sign in">&times;</span>
-                <form class="in-content" action="">
-                    
-                      <h1 class="title">Sign In</h1>
-                      <div class="inputcontainer">
-                        <label for="email"><b>Email</b></label>
-                        <input type="text" placeholder="" name="email" required>
-                      </div>
-
-                      <div class="inputcontainer">
-                        <label for="pw"><b>Password</b></label>
-                        <input type="password" placeholder="" name="psw" required>
-                      </div>
-                
-                      <label>
-                        <div class="checkboc-wrapper">
-                            <input type="checkbox" id="remember"> Remember me
-                        </div>    
-                      </label>
-                
-                      <div class="in-clear">
-                        <button type="button" onclick="document.getElementById('signin').style.display='none'" class="cancelbtn">Cancel</button>
-                        <button type="submit" class="signinbtn">Sign In</button>
-                      </div>
-                  </form>
-            </div>
-            <div id="signup" class="up_form">
-                <span onclick="document.getElementById('signup').style.display='none'" class="close" title="Close Sign up">&times;</span>
-                <form class="up-content" action="">
-                    
-                    <h1 class="title">Sign Up</h1>
-                    <div class="inputcontainer">
-                      <label for="email"><b>Email</b></label>
-                      <input type="text" placeholder="" name="email" required>
-                    </div>
-
-                    <div class="inputcontainer">
-                      <label for="pw"><b>Password</b></label>
-                      <input type="password" placeholder="" name="psw" required>
-                    </div>
-
-                    <div class="inputcontainer">
-                      <label for="confirm-pw"><b>Confirm Password</b></label>
-                      <input type="password" placeholder="" name="confirm-pws" required>
-                    </div>
-              
-                    <label>
-                      <div class="checkboc-wrapper">
-                          <input type="checkbox" id="remember"> Remember me
-                      </div>    
-                    </label>
-              
-                    <div class="up-clear">
-                      <button type="button" onclick="document.getElementById('signup').style.display='none'" class="cancelbtn">Cancel</button>
-                      <button type="submit" class="signinbtn">Sign Up</button>
-                    </div>
-                </form>
-            </div>
-
-            <script>
-                // Get the Sign in form
-                var in_form = document.getElementById('signin');
-                
-                // When the user clicks anywhere outside of the form, close it
-                window.onclick = function(event) {
-                  if (event.target == in_form) {
-                    in_form.style.display = "none";
-                  }
-                }
-
-                // Get the Sign up form
-                var up_form = document.getElementById('signup');
-                
-                // When the user clicks anywhere outside of the form, close it
-                window.onclick = function(event) {
-                  if (event.target == up_form) {
-                    up_form.style.display = "none";
-                  }
-                }
-            </script>
-
-            <h1>PAYSAFE</h1>
-            <p>Identify frauds and secure your money transfers!</p>
-            <h6>&copy; 2022 PAYSAFE</h6>
+</head>
+<body>
+    <!--Navigation box-->
+    <div class="navtag">
+        <div class="navbar">
+            <img src="Frame 1.png" alt="logo" class="logo">
+            <nav>
+                <ul class="link">
+                    <li><a href="#">Team</a></li>
+                    <li><a href="#">Sign in</a></li>
+                </ul>
+            </nav>
         </div>
-    </body>
+    </div>
+    <div class="hero">
+        <div class="left">
+            <p class="heading">Accessible payments for you</p>
+            <p class="subheading">Lorem ipsum dolor ssit amet consectetur adipisiciore undeadipisiciore uadipisiciore undende</p>
+        </div>
+        <div class="but"> 
+            <a href="#" class="button1">Sign in</a>
+            <a href="#" class="button2">Sign up</a>
+        </div>
+       
+        <div class="right">
+            <img src="sd.png" alt="im" class="illustration">
+        </div>
+
+    </div>
+
+   
+</body>
 </html>
