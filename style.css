@@ -18,7 +18,7 @@
   
   }
   .brand {
-    color: white;
+    color: whitesmoke;
     text-decoration: none;
     font-family: "Rubik", sans-serif;
     font-weight: bold;
@@ -83,28 +83,27 @@
     color: blue;
   }
   
-  .but{
-    margin-right: auto;
-    margin-left: auto;
+  .land-btn{
+
     margin-top:40px;
+    display: flex;
+    justify-content: center;
   }
-  .button1 {
-    background-color: #000000;
-    border-radius:64px;
-    color: white;
-    padding: 20px 64px;
+
+
+  .copy{
+    font-family: sans-serif;
+    font-size: 15px ;
+    color: whitesmoke;
     text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    cursor: pointer;
-    font-family: "karla", sans-serif;
-    margin-right: 24px;
+    margin-bottom: 40px;
   }
-  .button2 {
-    background-color: #ffffff;
+
+  .btn2 {
+    background-color: #000000;
+    color: white;
+    padding: 14px 20px;
     border-radius:64px;
-    color: rgb(0, 0, 0);
     padding: 20px 64px;
     text-align: center;
     text-decoration: none;
@@ -113,13 +112,19 @@
     font-weight: bolder;
     cursor: pointer;
     font-family: "karla", sans-serif;
-  
   }
-
-  .copy{
-    font-family: sans-serif;
-    font-size: 15px ;
-    color: whitesmoke;
+  .btn1 {
+    background-color: #ffffff;
+    color: rgb(0, 0, 0);
+    padding: 14px 20px;
+    border-radius:64px;
+    padding: 20px 64px;
     text-align: center;
-    margin-bottom: 40px;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+    font-family: "karla", sans-serif;
+    margin-right: 24px;
+    border: none;
   }

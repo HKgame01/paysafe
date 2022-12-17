@@ -32,10 +32,103 @@
             <p class="heading">Accessible payments for you</p>
             <p class="subheading">Identify frauds and secure your money transfers!</p>
         </div>
-        <div class="but"> 
-            <a href="#" class="button1">Sign in</a>
-            <a href="#" class="button2">Sign up</a>
-        </div>
+        
+        <!--  ==LOGIN/SIGN UP FORMS==  -->
+
+        <div class="register-page">
+            <div class="land-btn">
+                <label for="signinbtn">
+                    <button class="btn1" onclick="document.getElementById('signin').style.display='block'" style="width:auto;">Sign in</button>
+                </label>
+                <button class="btn2" onclick="document.getElementById('signup').style.display='block'" style="width:auto;">Sign up</button>
+            </div>
+            <div id="signin" class="in_form">
+                <label for="signinclose">
+                    <span onclick="document.getElementById('signin').style.display='none'" class="close" title="Close Sign in">&times;</span>
+                </label>
+                <form class="in-content" action="paysafe.html">
+                    
+                      <h1 class="title">Sign In</h1>
+                      <div class="inputcontainer">
+                        <label for="email"><b>Email</b></label>
+                        <input type="text" placeholder="" name="email" required>
+                      </div>
+
+                      <div class="inputcontainer">
+                        <label for="pw"><b>Password</b></label>
+                        <input type="password" placeholder="" name="psw" required>
+                      </div>
+                
+                      <label>
+                        <div class="checkboc-wrapper">
+                            <input type="checkbox" id="remember"> Remember me
+                        </div>    
+                      </label>
+                
+                      <div class="in-clear">
+                        <button type="button" onclick="document.getElementById('signin').style.display='none'" class="cancelbtn">Cancel</button>
+                        <button type="submit" class="signinbtn">Sign In</button>
+                      </div>
+                  </form>
+            </div>
+            <div id="signup" class="up_form">
+                <label>
+                    <span onclick="document.getElementById('signup').style.display='none'" class="close" title="Close Sign up">&times;</span>
+                </label>
+                <form class="up-content" action="paysafe.html">
+                    
+                    <h1 class="title">Sign Up</h1>
+                    <div class="inputcontainer">
+                      <label for="email"><b>Email</b></label>
+                      <input type="text" placeholder="" name="email" required>
+                    </div>
+
+                    <div class="inputcontainer">
+                      <label for="pw"><b>Password</b></label>
+                      <input type="password" placeholder="" name="psw" required>
+                    </div>
+
+                    <div class="inputcontainer">
+                      <label for="confirm-pw"><b>Confirm Password</b></label>
+                      <input type="password" placeholder="" name="confirm-pws" required>
+                    </div>
+              
+                    <label>
+                      <div class="checkbox-wrapper">
+                          <input type="checkbox" id="remember"> Remember me
+                      </div>    
+                    </label>
+              
+                    <div class="up-clear">
+                      <button type="button" onclick="document.getElementById('signup').style.display='none'" class="cancelbtn">Cancel</button>
+                      <button type="submit" class="signinbtn">Sign Up</button>
+                    </div>
+                </form>
+            </div>
+
+            <script>
+                // Get the Sign in form
+                var in_form = document.getElementById('signin');
+                
+                // When the user clicks anywhere outside of the form, close it
+                window.onclick = function(event) {
+                  if (event.target == in_form) {
+                    in_form.style.display = "none";
+                  }
+                }
+
+                // Get the Sign up form
+                var up_form = document.getElementById('signup');
+                
+                // When the user clicks anywhere outside of the form, close it
+                window.onclick = function(event) {
+                  if (event.target == up_form) {
+                    up_form.style.display = "none";
+                  }
+                }
+            </script>
+
+        <!-- ==== -->
        
         <div class="right">
             <img src="sd.png" alt="im" class="illustration">
@@ -44,6 +137,7 @@
         <p class="copy">&copy; 2022 PAYSAFE</p>
 
     </div>
+
 
    
 </body>
