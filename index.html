@@ -49,21 +49,23 @@
                     </label>
                 </div>
 
+                <div class="signinform">
+
                 <form class="in-content" action="paysafe.html">
                     
                       <h1 class="title">Sign In</h1>
                       <div class="inputcontainer">
+                        <input type="email" placeholder="" name="email" required>
                         <label for="email"><b>Email</b></label>
-                        <input type="text" placeholder="" name="email" required>
                       </div>
 
                       <div class="inputcontainer">
-                        <label for="pw"><b>Password</b></label>
                         <input type="password" placeholder="" name="psw" required>
+                        <label for="pw"><b>Password</b></label>
                       </div>
                 
                       <label>
-                        <div class="checkboc-wrapper">
+                        <div class="checkbox-wrapper">
                             <input type="checkbox" id="remember"> Remember me
                         </div>    
                       </label>
@@ -72,7 +74,8 @@
                         <button type="button" onclick="document.getElementById('signin').style.display='none'" class="cancelbtn">Cancel</button>
                         <button type="submit" class="signinbtn">Sign In</button>
                       </div>
-                  </form>
+                </form>
+                </div>
             </div>
             <div id="signup" class="up_form">
                 <div class="form">
@@ -81,22 +84,34 @@
                     </label>
                 </div>
 
+                <div class="signupform">
                 <form class="up-content" action="paysafe.html">
                     
                     <h1 class="title">Sign Up</h1>
+
                     <div class="inputcontainer">
+                        <input type="text" placeholder="" name="fname" required>
+                        <label for="fname"><b>Enter First Name</b></label>
+                    </div>
+
+                    <div class="inputcontainer">
+                        <input type="text" placeholder="" name="lname" required>
+                        <label for="lname"><b>Enter Last Name</b></label>
+                    </div>
+
+                    <div class="inputcontainer">
+                      <input type="email" placeholder="" name="email" required>
                       <label for="email"><b>Email</b></label>
-                      <input type="text" placeholder="" name="email" required>
                     </div>
 
                     <div class="inputcontainer">
-                      <label for="pw"><b>Password</b></label>
                       <input type="password" placeholder="" name="psw" required>
+                      <label for="pw"><b>Password</b></label>
                     </div>
 
                     <div class="inputcontainer">
-                      <label for="confirm-pw"><b>Confirm Password</b></label>
                       <input type="password" placeholder="" name="confirm-pws" required>
+                      <label for="confirm-pw"><b>Confirm Password</b></label>
                     </div>
               
                     <label>
@@ -110,6 +125,7 @@
                       <button type="submit" class="signinbtn">Sign Up</button>
                     </div>
                 </form>
+                </div>
             </div>
 
             <script>
