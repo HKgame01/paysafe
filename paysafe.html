@@ -37,14 +37,39 @@
                 <h1>PAYSAFE</h1>
                 <p>Identify frauds and secure your money transfers!</p>
                 <button onclick="document.getElementById('transac').style.display='block'" style="width:auto;">Start Transaction</button>
-                <div id="transac" class="transac-btn">
+                <div id="transac" class="transacbtn">
                     <span onclick="document.getElementById('transac').style.display='none'" class="close" title="Cancel Transaction">&times;</span>
                     <form class="pay" action="">
                         <div class="transacinput">
-                            <input type="number" placeholder="Enter Receiver's Contact No" name="contactno">
-                            <input type="number" placeholder="Enter the amount you want to send" name="amt">
-                            <input> 
+                            <input type="text" placeholder="Enter Receiver's Contact No" name="contactno">
+                            <input type="text" placeholder="Enter the amount you want to send" name="amt">
+                            <div class="dropdown">
+                                <label for="days">For how many days should we hold your transaction?</label>
+                                <select name="no_days" id="no_days">
+                                    <option value="12hours">12 hours</option>
+                                    <option value="1day">1 Day</option>
+                                    <option value="3days">3 Days</option>
+                                    <option value="5days">5 Days</option>
+                                    <option value="7days">7 Days</option>
+                                </select> 
+                            </div>
+                            
                         </div>
+                    </form>
+
+                    <script>
+                        // Get the Transaction form
+                        var transacbtn = document.getElementById('transac');
+                
+                        // When the user clicks anywhere outside of the form, close it
+                        window.onclick = function(event) {
+                            if (event.target == transacbtn) {
+                                transacbtn.style.display = "none";
+                            }
+                        }
+                    </script>
+
                 </div>
         </div>
     </body>
+</html>
