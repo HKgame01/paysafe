@@ -15,6 +15,8 @@
   .navtag {
     background-color: rgb(255, 255, 255);
     padding: 1em;
+    position: relative;
+    content: "";
   
   }
   .brand {
@@ -127,4 +129,42 @@
     font-family: "karla", sans-serif;
     margin-right: 24px;
     border: none;
+  }
+
+  .in_form,
+  .up_form{
+    position:absolute;
+    top:45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 3px 3px 10px 1px rgba(0, 0, 0, 0.2);
+    transition: .3s;
+
+  }
+
+  /*.in_form{
+    display: none;
+  }*/
+
+  .form{
+    width: 500px;
+    padding: 20px 50px;
+    height: 200px;
+  }
+
+  .form .close{
+    text-align: right;
+    cursor: pointer;
+  }
+  .form form{
+    display: block;
+    margin: auto;
+  }
+  .up_form.active,
+  .in_form.active{
+    top:50%;
+    transition: .3s;
+
   }

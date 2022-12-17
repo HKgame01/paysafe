@@ -43,9 +43,12 @@
                 <button class="btn2" onclick="document.getElementById('signup').style.display='block'" style="width:auto;">Sign up</button>
             </div>
             <div id="signin" class="in_form">
-                <label for="signinclose">
-                    <span onclick="document.getElementById('signin').style.display='none'" class="close" title="Close Sign in">&times;</span>
-                </label>
+                <div class="form">
+                    <label for="signinclose">
+                        <span onclick="document.getElementById('signin').style.display='none'" class="close" title="Close Sign in">&times;</span>
+                    </label>
+                </div>
+
                 <form class="in-content" action="paysafe.html">
                     
                       <h1 class="title">Sign In</h1>
@@ -72,9 +75,12 @@
                   </form>
             </div>
             <div id="signup" class="up_form">
-                <label>
-                    <span onclick="document.getElementById('signup').style.display='none'" class="close" title="Close Sign up">&times;</span>
-                </label>
+                <div class="form">
+                    <label>
+                        <span onclick="document.getElementById('signup').style.display='none'" class="close" title="Close Sign up">&times;</span>
+                    </label>
+                </div>
+
                 <form class="up-content" action="paysafe.html">
                     
                     <h1 class="title">Sign Up</h1>
@@ -108,24 +114,25 @@
 
             <script>
                 // Get the Sign in form
-                var in_form = document.getElementById('signin');
-                
-                // When the user clicks anywhere outside of the form, close it
-                window.onclick = function(event) {
-                  if (event.target == in_form) {
-                    in_form.style.display = "none";
-                  }
-                }
-
+                 var in_form = document.getElementById('signin');
                 // Get the Sign up form
-                var up_form = document.getElementById('signup');
+                 var up_form = document.getElementById('signup');
                 
                 // When the user clicks anywhere outside of the form, close it
-                window.onclick = function(event) {
-                  if (event.target == up_form) {
-                    up_form.style.display = "none";
-                  }
-                }
+                 window.onclick = function(event) {
+                   if (event.target == in_form) {
+                     in_form.style.display = "none";
+                   }
+                 }
+                
+                // When the user clicks anywhere outside of the form, close it
+                 window.onclick = function(event) {
+                   if (event.target == up_form) {
+                     up_form.style.display = "none";
+                   }
+                 }
+
+                 
             </script>
 
         <!-- ==== -->
