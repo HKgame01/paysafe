@@ -57,4 +57,53 @@
     margin-bottom: 25px;
     letter-spacing: 2px;
     text-align: center;
+    color: whitesmoke;
   }
+
+
+  .transac-start {
+    background-color: #000000;
+    color: white;
+    padding: 14px 20px;
+    border-radius:64px;
+    padding: 20px 64px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    font-weight: bolder;
+    cursor: pointer;
+    font-family: "karla", sans-serif;
+    margin-left: 667px;
+    margin-top: 40px;
+  }
+  .transacbtn{
+    position:absolute;
+    top:225px;
+    left: 50%;
+    width: 540px;
+    /*height: 440px;*/
+    height: 90vh;
+    transform: translate(-50%, -50%);
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 3px 3px 10px 1px rgba(0, 0, 0, 0.2);
+
+    display: none; /* Hidden by default */
+    z-index: 1; /* Sit on top */
+    overflow: auto; /* Enable scroll if needed */
+    padding-top: 36px;
+
+  }
+
+  .payform .transac-title{
+    text-align: center;
+    font-size: 35px;
+    width:300px;
+    text-shadow: #0f1419 1px 1px 2px;
+    margin-bottom: 50px;
+    margin-top: 40px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  

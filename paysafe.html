@@ -40,13 +40,16 @@
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque atque accusamus perferendis aperiam totam, ipsa voluptates nihil in commodi nobis, a, placeat optio deleniti animi explicabo consequuntur. Eligendi, assumenda fuga?</p>
                     </div>
                 </div>
-                <button onclick="document.getElementById('transac').style.display='block'" style="width:auto;">Start Transaction</button>
+                <div class="start-btn">
+                    <button class="transac-start" onclick="document.getElementById('transac').style.display='block'" style="width:auto;">Start Transaction</button>
+                </div>
                 <div id="transac" class="transacbtn">
                     <label for="payclose">
                         <span onclick="document.getElementById('transac').style.display='none'" class="close" title="Cancel Transaction">&times;</span>
                     </label>
                     <div class="payform">
                     <form class="pay" action="">
+                        <h3 class="transac-title">Your way to Secure Payments!</h3>
                         <div class="transacinput">
                             <input type="text" placeholder="Enter Receiver's Contact No" name="contactno">
                             <input type="text" placeholder="Enter the amount you want to send" name="amt">
