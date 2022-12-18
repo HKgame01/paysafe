@@ -42,7 +42,10 @@
                 </div>
                 <button onclick="document.getElementById('transac').style.display='block'" style="width:auto;">Start Transaction</button>
                 <div id="transac" class="transacbtn">
-                    <span onclick="document.getElementById('transac').style.display='none'" class="close" title="Cancel Transaction">&times;</span>
+                    <label for="payclose">
+                        <span onclick="document.getElementById('transac').style.display='none'" class="close" title="Cancel Transaction">&times;</span>
+                    </label>
+                    <div class="payform">
                     <form class="pay" action="">
                         <div class="transacinput">
                             <input type="text" placeholder="Enter Receiver's Contact No" name="contactno">
@@ -59,7 +62,13 @@
                             </div>
                             
                         </div>
+
+                        <div class="in-clear">
+                            <button type="button" onclick="document.getElementById('transac').style.display='none'" class="cancelbtn">Cancel Transaction</button>
+                            <button type="submit" class="paybtn">Pay</button>
+                        </div>
                     </form>
+                    </div>
 
                     <script>
                         // Get the Transaction form
