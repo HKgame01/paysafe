@@ -46,7 +46,7 @@
   .content{
     position: relative;
     width:900px;
-    margin-left: 350px;
+    margin-left: auto;
     margin-right: auto;
   }
   .content h1{
@@ -74,8 +74,9 @@
     font-weight: bolder;
     cursor: pointer;
     font-family: "karla", sans-serif;
-    margin-left: 667px;
+    margin-left: 650px;
     margin-top: 40px;
+    margin-bottom: 120px;
   }
   .transacbtn{
     position:absolute;
@@ -106,4 +107,108 @@
     margin-left: auto;
     margin-right: auto;
   }
+  .transacinput input[type=email], input[type=text]{
+    margin-bottom: 20px;
+    width: 240px;
+    height: 35px;
+    border: 1px solid #ff7200;
   
+    color: antiquewhite;
+    font-size: 15px;
+    letter-spacing: 1px;
+    margin-top: 10px;
+    font-family: "karla",sans-serif;
+  }
+  .cancelbtn,
+.paybtn{
+  background-color: rgb(59, 59, 203);
+    color: white;
+    padding: 14px 20px;
+    border-radius:64px;
+    padding: 14px 44px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    font-weight: bolder;
+    cursor: pointer;
+    font-family: "karla", sans-serif;
+    border: none;
+}
+
+.menu{
+    width: 300px;
+}
+ul{
+    list-style: none;
+}
+.know a,
+.support a{
+    color: whitesmoke;
+    font-size: 20px;
+    margin-bottom: 20px;
+    margin-left: 30px;
+    margin-top: 30px;
+}
+.know,
+.support{
+    font-size: 20px;
+    margin-bottom: 20px;
+    margin-left: 30px;
+    margin-top: 30px;
+}
+/* ===FOOTER=== */
+
+
+.site-footer
+{
+  background-color:#26272b;
+  padding:45px 0 20px;
+  font-size:15px;
+  line-height:24px;
+  color:#737373;
+}
+
+
+.site-footer h6
+{
+  color:#fff;
+  font-size:16px;
+  text-transform:uppercase;
+  margin-top:5px;
+  letter-spacing:2px
+}
+.site-footer a
+{
+  color:#737373;
+}
+
+.footer-links
+{
+  padding-left:0;
+  list-style:none
+}
+.footer-links li
+{
+  display:block
+}
+.footer-links a
+{
+  color:#737373
+}
+.footer-links a:active,.footer-links a:focus,.footer-links a:hover
+{
+  color:#3366cc;
+  text-decoration:none;
+}
+.footer-links.inline li
+{
+  display:inline-block
+}
+.copyright-text
+{
+  margin:0
+}
+.position{
+  margin-left:500px;
+}
