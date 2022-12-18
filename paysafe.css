@@ -1,0 +1,44 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+  }
+
+  body {
+    background-color: rgb(59, 59, 203);
+    max-height: 800px;
+   
+    
+  }
+  
+  .navbar {
+    background-color: rgb(255, 255, 255);
+    padding: 1em;
+    position: relative;
+    content: "";
+    display: flex;
+  }
+
+
+  .contact{
+    background-color: #1c1c1c;
+    color: whitesmoke;
+    margin-left: 1100px;
+    margin-top: 12px;
+    margin-bottom: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    border: none;
+    border-radius: 28px;
+  }
+  .logo{
+    margin-top: 20px;
+    margin-bottom: 10px;
+  }
+
+  .transaction{
+    position: relative;
+  }
